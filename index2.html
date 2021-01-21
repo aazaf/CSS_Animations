@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section {
+            overflow: hidden;
+        }
+
+        section > div {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation:slider 5s alternate-reverse infinite;
+        }
+
+        section > div > img {
+            width: 20%;
+            height: 100vh;
+            float: left;
+        }
+
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+            25% {
+                left: 0;
+            }
+            35% {
+                left: -100%;
+            }
+            60% {
+                left: -100%;
+            }
+
+            70% {
+                left: -200%;
+            }
+
+            100% {
+                left: -200%;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <img src="assets/cat.jpg" alt="pic">
+        <img src="assets/nature.jpg" alt="2 pic">
+        <img src="assets/out.jpg" alt="3 pic">
+    </div>
+</section>
+</body>
+</html>
